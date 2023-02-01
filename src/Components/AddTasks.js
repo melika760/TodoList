@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState,Fragment} from "react";
 import Card from "./UI/Card";
 import Button from "./UI/Button";
 import classes from "./AddTasks.module.css"
@@ -25,7 +25,7 @@ SetTasks(event.target.value)
         SetError(null)
     }
 return(
-    <div>
+    <Fragment>
     {Error && (
       <ErrorModal
         title={Error.title}
@@ -39,6 +39,6 @@ return(
 <Button type="submit" className={classes.button}>Submit</Button>
     </form>
     </Card>
-    </div>
+    </Fragment>
 )
 }

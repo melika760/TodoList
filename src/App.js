@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,Fragment} from 'react';
 import './App.css';
 import TasksList from './Components/TasksList';
 import Majik from "./majik.jpg"
@@ -25,12 +25,12 @@ if(Load){ return (
 );}
 else{
   return(
-    <div className="App">
+    <Fragment className="App">
     <img src={Majik} alt="headerPic" className='Majik'/>
     <h5 className='Unimage'>The goal without plan is just Dream</h5>
   <AddTasks onAddUser={AddUserHandler}/>
   <p className='Unimage'>Please Add Your Tasks</p>
-  </div>
+  </Fragment>
   )
 }
  
