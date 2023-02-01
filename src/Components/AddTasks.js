@@ -6,9 +6,10 @@ export default function AddTasks(props){
     const[Tasks,SetTasks]=useState("")
     function SubmitHandler(event){
         event.preventDefault();
-        if(Tasks.trim()===0){
+        if(Tasks.trim().length===0){
             return;
         }
+        props.onAddUser(Tasks)
         SetTasks("")
     }
     function AddNewTasks(event){
