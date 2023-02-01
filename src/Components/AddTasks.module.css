@@ -18,3 +18,16 @@
     outline: none;
     border-color: #4f005f;
   }
+  
+    @media(max-width:840px){
+.button
+{
+  display: block;
+  margin: auto;
+}
+.input{
+  width: 100%;
+  text-align: center;
+}
+    }
+  

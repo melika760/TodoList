@@ -36,7 +36,7 @@ return(
     <Card className={classes.input}>
     <form onSubmit={SubmitHandler}>
         <input type="text" placeholder="Enter new Tasks" onChange={AddNewTasks} value={Tasks}/>
-<Button type="submit">Submit</Button>
+<Button type="submit" className={classes.button}>Submit</Button>
     </form>
     </Card>
     </div>
